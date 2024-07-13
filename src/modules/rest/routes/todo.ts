@@ -167,7 +167,7 @@ export default (router: Router): void => {
 
         return res.status(200).json({
           status: 'success',
-          data: req.t('todo.finish_success'),
+          data: finished,
         });
       } catch (err: unknown) {
         if (err instanceof z.ZodError) {
@@ -257,7 +257,7 @@ export default (router: Router): void => {
 
         return res.status(200).json({
           status: 'success',
-          data: req.t('todo.revert_success'),
+          data: reverted,
         });
       } catch (err: unknown) {
         if (err instanceof z.ZodError) {
