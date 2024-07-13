@@ -1,0 +1,20 @@
+{
+  "todo": {
+    "create_error": "Error al crear la Tarea",
+    "not_found": "Tarea no encontrada",
+    "edit_error": "Error al editar la Tarea",
+    "delete_error": "Error al eliminar la Tarea",
+    "finish_error": "Error al finalizar la Tarea",
+    "delete_success": "Tarea eliminada exitosamente",
+    "finish_success": "Tarea finalizada exitosamente",
+    "revert_error": "Error al revertir el estado de la tarea",
+    "revert_success": "Estado de la tarea revertido exitosamente"
+  },
+  "user": {
+    "user_forbidden": "Acceso al recurso solicitado está prohibido",
+    "user_unauthorized": "La solicitud no se completó porque faltan credenciales de autenticación válidas para el recurso solicitado"
+  },
+  "error": {
+    "server_error": "El servidor encontró una condición inesperada que le impidió cumplir completamente la solicitud"
+  }
+}

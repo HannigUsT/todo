@@ -1,0 +1,25 @@
+{
+  "env": {
+    "commonjs": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "babel.config.js"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script",
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {}
+}

@@ -1,0 +1,20 @@
+{
+  "todo": {
+    "create_error": "Erro ao criar Atividade",
+    "not_found": "Atividade não foi encontrada",
+    "edit_error": "Erro ao editar Atividade",
+    "delete_error": "Erro ao excluir Atividade",
+    "finish_error": "Erro ao concluir Atividade",
+    "delete_success": "Atividade deletada com sucesso",
+    "finish_success": "Atividade concluida com sucesso",
+    "revert_error": "Erro ao reverter status da atividade",
+    "revert_success": "Status da atividade revertida com sucesso"
+  },
+  "user": {
+    "user_forbidden": "Acesso ao recurso solicitado é proibido",
+    "user_unauthorized": "A solicitação não foi concluída porque falta credenciais de autenticação válidas para o recurso solicitado"
+  },
+  "error": {
+    "server_error": "O servidor encontrou uma condição inesperada que o impediu de cumprir completamente a solicitação"
+  }
+}

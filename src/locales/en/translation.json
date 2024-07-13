@@ -1,0 +1,20 @@
+{
+  "todo": {
+    "create_error": "Error creating Task",
+    "not_found": "Task not found",
+    "edit_error": "Error editing Task",
+    "delete_error": "Error deleting Task",
+    "finish_error": "Error finishing Task",
+    "delete_success": "Task deleted successfully",
+    "finish_success": "Task finished successfully",
+    "revert_error": "Error reverting task status",
+    "revert_success": "Task status reverted successfully"
+  },
+  "user": {
+    "user_forbidden": "Access to the requested resource is forbidden",
+    "user_unauthorized": "The request was not completed because valid authentication credentials are missing for the requested resource"
+  },
+  "error": {
+    "server_error": "The server encountered an unexpected condition that prevented it from fulfilling the request"
+  }
+}

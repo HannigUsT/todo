@@ -1,0 +1,12 @@
+/node_modules
+/build
+/build-tsc
+/dist
+package-lock.json
+
+*.png
+*.jpeg
+
+*.env
+
+/logs
