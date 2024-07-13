@@ -56,6 +56,18 @@ routes: In the growth of the backend, it's configurable in src/config/routes.ts 
 npm install
 ```
 
+## Generate database
+
+```bash
+npx prisma migrate dev --name init
+```
+
+## Generate typescript base on prisma models
+
+```bash
+npx prisma generate
+```
+
 ## Run in development mode
 
 ```bash

@@ -12,7 +12,7 @@
 
 ### 2.1 - Frontend
 
-* [ ] Angular.io - <https://angular.io/>
+* [X] Angular.io - <https://angular.io/>
 
 ### 2.2 - Backend
 
@@ -36,18 +36,18 @@
 
 #### 3.1.2 - Recursos
 
-* [ ] Deve possibilitar o usuário criar uma nova atividade.
+* [X] Deve possibilitar o usuário criar uma nova atividade.
 
-* [ ] Deve possuir uma lista com as atividades não concluídas.
-  * [ ] A lista deve estar ordenada por ordem de criação decrescente.
-  * [ ] No item da lista deve possuir a descrição da atividade.
-  * [ ] No item da lista deve possuir uma forma de concluir a atividade.
-  * [ ] No item da lista deve possuir uma forma de excluir a atividade.
-* [ ] Deve possuir uma lista com as atividades já concluídas.
-  * [ ] A lista deve estar ordenada por ordem de conclusão decrescente.
-  * [ ] No item da lista deve possuir a descrição da atividade.
-  * [ ] No item da lista deve possuir uma forma de voltar a a atividade para não concluída.
-  * [ ] No item da lista deve possuir uma forma de excluir a atividade.
+* [X] Deve possuir uma lista com as atividades não concluídas.
+  * [X] A lista deve estar ordenada por ordem de criação decrescente.
+  * [X] No item da lista deve possuir a descrição da atividade.
+  * [X] No item da lista deve possuir uma forma de concluir a atividade.
+  * [X] No item da lista deve possuir uma forma de excluir a atividade.
+* [X] Deve possuir uma lista com as atividades já concluídas.
+  * [X] A lista deve estar ordenada por ordem de conclusão decrescente.
+  * [X] No item da lista deve possuir a descrição da atividade.
+  * [X] No item da lista deve possuir uma forma de voltar a a atividade para não concluída.
+  * [X] No item da lista deve possuir uma forma de excluir a atividade.
 
 <!-- #### 3.1.3 Modelo
 [TODO] = Adicionar o link da especificação da tela. -->
