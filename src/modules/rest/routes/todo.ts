@@ -97,12 +97,12 @@ export default (router: Router): void => {
 
   // Delete todo
   router.delete(
-    '/todo/delete',
+    '/todo/delete/:id',
     authenticate,
     authorize(['delete_todo']),
     async (req: Request, res: Response) => {
       try {
-        const { id } = req.body;
+        const { id } = req.params;
 
         const idValidated = idSchema.parse(id);
 

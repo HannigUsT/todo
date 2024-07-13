@@ -1,5 +1,7 @@
 # ToDo List
 
+## [API Documentation](https://app.swaggerhub.com/apis-docs/HanniGusT/ToDo/1.0.0)
+
 ## Overview
 
 The ToDo list API is a Node.js application built with TypeScript, Express, and PostgreSQL with PRISMA ORM. It enables the creationg and management of ToDo`s. This project adheres to S.O.L.I.D principles and clean code practices, ensuring a well-structured and maintainable codebase.
