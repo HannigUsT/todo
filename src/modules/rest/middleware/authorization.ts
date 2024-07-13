@@ -8,6 +8,7 @@ export const authenticate = async (
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Basic ')) {
     return res.status(401).json({
+      status: 'error',
       data: req.t('user.user_unauthorized'),
     });
   }
@@ -25,6 +26,7 @@ export const authenticate = async (
 
     if (!user || user.password !== password) {
       return res.status(401).json({
+        status: 'error',
         data: req.t('user.user_unauthorized'),
       });
     }
@@ -32,7 +34,9 @@ export const authenticate = async (
     req.user = user;
     next();
   } catch (error) {
-    return res.status(500).json({ error: 'Internal server error' });
+    return res
+      .status(500)
+      .json({ status: 'error', error: 'Internal server error' });
   }
 };
 
@@ -41,6 +45,7 @@ export const authorize = (permissions: string[]) => {
     const user = req.user;
     if (!user || !permissions.some((p) => user.permissions.includes(p))) {
       return res.status(403).json({
+        status: 'error',
         data: req.t('user.user_forbidden'),
       });
     }
