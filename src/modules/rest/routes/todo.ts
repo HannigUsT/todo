@@ -103,8 +103,9 @@ export default (router: Router): void => {
     async (req: Request, res: Response) => {
       try {
         const { id } = req.params;
+        console.log(id);
 
-        const idValidated = idSchema.parse(id);
+        const idValidated = idSchema.parse(Number(id));
 
         const deletedTodo = await todoManager.delete(idValidated, req);
 
@@ -233,19 +234,21 @@ export default (router: Router): void => {
 
   // Revert todo status
   router.put(
-    '/todo/revert',
+    '/todo/revert/:id',
     authenticate,
     authorize(['revert_todo']),
     async (req: Request, res: Response) => {
       try {
-        const { id } = req.body;
+        const { id } = req.params;
 
-        const idValidated = idSchema.parse(id);
+        const idValidated = idSchema.parse(Number(id));
 
         const reverted = await todoManager.revert(idValidated, req);
 
+        console.log(reverted);
+
         if (typeof reverted === 'string') {
-          return res.status(400).json({
+          return res.status(404).json({
             status: 'error',
             data: reverted,
           });

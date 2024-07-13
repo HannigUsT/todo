@@ -114,7 +114,7 @@ export class TodoService {
     req: Request,
   ): Promise<Atividade | undefined | string> {
     try {
-      const todoExists = this.todoPersistence.getTodoById(id);
+      const todoExists = await this.todoPersistence.getTodoById(id);
 
       if (!todoExists) {
         return req.t('todo.not_found');
