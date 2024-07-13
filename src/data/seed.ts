@@ -29,7 +29,7 @@ export const seed = async () => {
       await prisma.user.create({
         data: user,
       });
-      console.log(`User ${user.username} created`);
+      console.info(`User ${user.username} created`);
     }
   }
 };

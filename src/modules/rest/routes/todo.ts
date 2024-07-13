@@ -103,7 +103,6 @@ export default (router: Router): void => {
     async (req: Request, res: Response) => {
       try {
         const { id } = req.params;
-        console.log(id);
 
         const idValidated = idSchema.parse(Number(id));
 
@@ -244,8 +243,6 @@ export default (router: Router): void => {
         const idValidated = idSchema.parse(Number(id));
 
         const reverted = await todoManager.revert(idValidated, req);
-
-        console.log(reverted);
 
         if (typeof reverted === 'string') {
           return res.status(404).json({
