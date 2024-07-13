@@ -143,14 +143,14 @@ export default (router: Router): void => {
 
   // Finish todo
   router.put(
-    '/todo/finish',
+    '/todo/finish/:id',
     authenticate,
     authorize(['finish_todo']),
     async (req: Request, res: Response) => {
       try {
-        const { id } = req.body;
+        const { id } = req.params;
 
-        const idValidated = idSchema.parse(id);
+        const idValidated = idSchema.parse(Number(id));
 
         const finished = await todoManager.finish(idValidated, req);
 
