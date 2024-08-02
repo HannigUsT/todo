@@ -1,5 +1,5 @@
-import { makeTodoConsumer } from '../factory';
+import {makeTodoConsumer} from '../factory';
 
 const todoManager = makeTodoConsumer();
 
-export { todoManager };
+export {todoManager};

@@ -1,5 +1,5 @@
-import { UserService } from '../services';
+import {UserService} from '../services';
 
 const userService = new UserService();
 
-export { userService };
+export {userService};

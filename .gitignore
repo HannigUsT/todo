@@ -2,7 +2,6 @@
 /build
 /build-tsc
 /dist
-package-lock.json
 
 *.png
 *.jpeg

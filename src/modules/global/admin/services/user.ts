@@ -1,10 +1,9 @@
-import { Request, Response } from 'express';
+import {Request} from 'express';
 
 export class UserService {
-  public getUsername(req: Request, res: Response) {
-    const user = {
-      username: req.user!.username,
-    };
-    return user;
-  }
+    public getUsername(req: Request) {
+        return {
+            username: req.user!.username,
+        };
+    }
 }
